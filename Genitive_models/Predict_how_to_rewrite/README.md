@@ -22,6 +22,9 @@ First, go to the folder containing the script in your terminal:
 Then run these commands in the terminal to create your own classifier model:
 
 `python3 -m venv .venv`
+
 `source .venv/bin/activate`
+
 `pip install -r requirements.txt`
+
 `python classifier_kfold.py`

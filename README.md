@@ -18,3 +18,11 @@ This script will predict if a sentence that contains an s-genitive in Bokmål sh
 Current mean score using k-fold cross validation: 0.852496537279146
 
 The training data is based on the [Målfrid corpus](https://www.nb.no/sprakbanken/ressurskatalog/oai-nb-no-sbr-69/#corpus-info) and was manually tagged.
+
+## Predicts_if_rewrites
+
+This script will predict how a phrase in Bokmål that contains an -s genitive should be rewritten in Nynorsk.
+
+Current mean score using k-fold cross validation: 0.51098901098901
+
+The training data is based on the [Målfrid corpus](https://www.nb.no/sprakbanken/ressurskatalog/oai-nb-no-sbr-69/#corpus-info) and was manually tagged.
