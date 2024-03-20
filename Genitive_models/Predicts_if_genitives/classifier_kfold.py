@@ -67,15 +67,25 @@ cross_val_score(clf, x_data, y_data, cv=10)
 
 # Save model
 print("SAVING MODEL ...")
-model_pkl_file = "models/genitives_or_not.pkl"  
+model_pkl_file = "models/finalized_model.pkl"  
 
-with open(model_pkl_file, 'wb') as file:  
-    pickle.dump(clf, file)
+with open(model_pkl_file, 'wb') as model_file:  
+    pickle.dump(clf, model_file)
+
+# Save vectorizer
+print("SAVING VECTORIZER ...")
+vect_pkl_file = "models/vectorizer.pkl"  
+
+with open(vect_pkl_file, 'wb') as vect_file:  
+    pickle.dump(vect, vect_file)
   
-# Load model again
-print("LOADING MODEL FOR A SANITY CHECK ...")
-with open('models/genitives_or_not.pkl', 'rb') as file:
-    model = pickle.load(file)
+# Load model and vectorizer as a test
+print("LOADING MODEL AND VECTORIZER FOR A SANITY CHECK ...")
+with open('models/finalized_model.pkl', 'rb') as loaded_model_file:
+    model = pickle.load(loaded_model_file)
+
+with open('models/vectorizer.pkl', 'rb') as loaded_vect_file:
+    vect = pickle.load(loaded_vect_file)
 
 # Evaluate model
 print("RE-EVALUATE MODEL ...")

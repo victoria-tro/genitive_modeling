@@ -21,7 +21,7 @@ The training data is based on the [Målfrid corpus](https://www.nb.no/sprakbanke
 
 ## Predict_how_to_rewrite
 
-This script will predict how a phrase in Bokmål that contains an -s genitive should be rewritten in Nynorsk.
+This script will predict how a phrase in Bokmål that contains an -s genitive should be rewritten when translated into Nynorsk.
 
 Current mean score using k-fold cross validation: 0.51098901098901
 
