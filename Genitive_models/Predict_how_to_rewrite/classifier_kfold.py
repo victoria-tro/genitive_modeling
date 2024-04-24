@@ -43,7 +43,7 @@ print('\nTRAINING ...\n')
 # We use k-fold cross validation
 # We use a Logistic Regression model
 scores=[]
-kFold=KFold(n_splits=5,random_state=42,shuffle=True)
+kFold=KFold(n_splits=4,random_state=42,shuffle=True)
 clf = LogisticRegression(solver="lbfgs",max_iter=400)
 
 for train_index,test_index in kFold.split(x_data):
